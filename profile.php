@@ -11,7 +11,7 @@
             <div class="user-bg"> <img width="100%" alt="user" src="plugins/images/large/img1.jpg">
                 <div class="overlay-box">
                     <div class="user-content">
-                        <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg" class="thumb-lg img-circle" alt="img"></a>
+                        <a href="javascript:void(0)"><img src="plugins/images/users/admin.png" class="thumb-lg img-circle" alt="img"></a>
                         <h4 class="text-white">Admin</h4>
                         <h5 class="text-white">Rumah Mode Tresna</h5> </div>
                 </div>

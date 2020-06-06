@@ -58,22 +58,13 @@
     <div class="row">
         <div class="col-md-12 col-lg-12 col-sm-12">
             <div class="white-box">
-                <div class="col-md-3 col-sm-4 col-xs-6 pull-right">
-                    <select class="form-control pull-right row b-none">
-                        <option>March 2017</option>
-                        <option>April 2017</option>
-                        <option>May 2017</option>
-                        <option>June 2017</option>
-                        <option>July 2017</option>
-                    </select>
-                </div>
                 <h3 class="box-title">Penjualan Terbaru</h3>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>NAME</th>
+                                <th>JENIS TRANSAKSI</th>
                                 <th>STATUS</th>
                                 <th>DATE</th>
                                 <th>PRICE</th>

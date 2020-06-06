@@ -79,7 +79,7 @@
                             <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
                     </li>
                     <li>
-                        <a class="profile-pic" href="#"> <img src="plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Admin</b></a>
+                        <a class="profile-pic" href="#"> <img src="plugins/images/users/admin.png" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Admin</b></a>
                     </li>
                 </ul>
             </div>
@@ -125,8 +125,28 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row bg-title">
+                    <?php 
+                    $keteranganContent = ""; 
+                    switch ($content) {
+                        case 'dashboard.php':
+                            $keteranganContent = "Dashboard";
+                            break;
+                        case 'profile.php':
+                            $keteranganContent = "Profile";
+                            break;
+                        case 'rekap.php' :
+                            $keteranganContent = "Rekapitulasi Penjualan";
+                            break;
+                        case 'tambah.php' :
+                            $keteranganContent = "Tambah Penjualan";
+                            break;
+                        default :
+                            $keteranganContent = "Not Found";
+                            break;
+                    }
+                    ?>
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Dashboard</h4> </div>
+                        <h4 class="page-title"><?=$keteranganContent;?></h4> </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
