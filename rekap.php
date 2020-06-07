@@ -1,7 +1,7 @@
 <?php  
 	
 	require 'functions.php';
-	
+	$penjualan = query("SELECT * FROM daftarpenjualan INNER JOIN kategori ON daftarpenjualan.id_kategori=kategori.id_kategori ORDER BY tanggal DESC");
 
 ?>
 
@@ -24,16 +24,24 @@
                                 <th>TANGGAL</th>
                                 <th>BIAYA TRANSAKSI</th>
                                 <th>BIAYA ADMIN</th>
+                                <th>KETERANGAN</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php 
+                            $i = 0;
+                            foreach ($penjualan as $jual): ?>
                             <tr>
-                                <td>1</td>
-                                <td class="txt-oflo">Elite admin</td>
-                                <td class="txt-oflo">April 18, 2017</td>
-                                <td><span class="text-success">$24</span></td>
-                                <td><span class="text-info">$24</span></td>
+                                <td><?=$i+1;?></td>
+                                <td class="txt-oflo"><?=$jual["layanan"] . " - " . $jual["nama_kategori"];?></td>
+                                <td class="txt-oflo"><?=$jual["tanggal"];?></td>
+                                <td><span class="text-success"><?=rupiah($jual["biaya_transaksi"]); ?></span></td>
+                                <td><span class="text-info"><?=rupiah($jual["biaya_admin"]); ?></span></td>
+                                <td><?=$jual["keterangan"];?></td>
                             </tr>
+                            <?php 
+                            $i++;
+                            endforeach; ?>
                         </tbody>
                     </table>
                 </div>
