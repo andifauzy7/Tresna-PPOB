@@ -16,9 +16,6 @@
 								'$biaya_transaksi', 
 								'$biaya_admin', 
 								'$keterangan')");
-		// echo 	'<script>
-		// 			alert("Data Berhasil Ditambahkan!");
-		// 		 </script>';
 	}
 ?>
 
