@@ -2,11 +2,11 @@
      "use strict";
      // toat popup js
      $.toast({
-         heading: 'Welcome to Ample admin',
-         text: 'Use the predefined ones, or specify a custom position object.',
-         position: 'top-right',
+         heading: 'Laporan Transaksi',
+         text: 'Rumah Mode Busana Tresna.',
+         position: 'top-center',
          loaderBg: '#fff',
-         icon: 'warning',
+         icon: 'info',
          hideAfter: 3500,
          stack: 6
      })
@@ -16,8 +16,8 @@
      new Chartist.Line('#ct-visits', {
          labels: mingguan,
          series: [
-    hasilNew
-    , hasilOld
+    hasilOld
+    , hasilNew
   ]
      }, {
          top: 0,
@@ -29,7 +29,7 @@
   ],
          axisY: {
              labelInterpolationFnc: function (value) {
-                 return (value / 1) + 'k';
+                 return (value / 1);
              }
          },
          showArea: true
