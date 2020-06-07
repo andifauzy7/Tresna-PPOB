@@ -14,14 +14,14 @@
 
      //ct-visits
      new Chartist.Line('#ct-visits', {
-         labels: ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015'],
+         labels: mingguan,
          series: [
-    [5, 2, 7, 4, 5, 3, 5, 4]
-    , [2, 5, 2, 6, 2, 5, 2, 4]
+    hasilNew
+    , hasilOld
   ]
      }, {
          top: 0,
-         low: 1,
+         low: 0,
          showPoint: true,
          fullWidth: true,
          plugins: [

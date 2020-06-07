@@ -4,7 +4,7 @@
 
 	function query($string){
 		global $string_conn;
-		$result			=	mysqli_query($string_conn,"$string");
+		$result			=	mysqli_query($string_conn,$string);
 		// PROSES MENGURAI 1 PERSATU DATA.
 		while($satuan 	= 	mysqli_fetch_assoc($result)){
 			$hasil[] 	= 	$satuan;
