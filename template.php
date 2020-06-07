@@ -1,5 +1,5 @@
 <?php  
-    
+
     if (!isset($_GET['content'])){
         $content='dashboard.php';
     } else {
@@ -110,6 +110,9 @@
                         <a href="template.php?content=tambah.php" class="waves-effect"><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Tambah Penjualan</a>
                     </li>
                 </ul>
+                <div class="center p-20">
+                     <a href="https://google.com" target="_blank" class="btn btn-danger btn-block waves-effect waves-light">Keluar</a>
+                 </div>
             </div>
             
         </div>
